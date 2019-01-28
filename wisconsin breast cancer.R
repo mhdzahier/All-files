@@ -37,10 +37,12 @@ multi.hist(breastcancer[,sapply(breastcancer, is.numeric)][20:28], bcol = 'light
 multi.hist(breastcancer[,sapply(breastcancer, is.numeric)][29:31], bcol = 'lightblue')
 
 #skewness
+library(fBasics)
+
 continuous_variables<- breastcancer[,sapply(breastcancer, is.numeric)]
 colSkewness(continuous_variables[-1])
 
-library(fBasics)
+
 
 #cube root transformation
 
